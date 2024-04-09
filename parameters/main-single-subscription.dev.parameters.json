@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "applicationName": {
+      "value": "AppName"
+    },
+    "cloudRegion": {
+      "value": "australiaeast"
+    },
+    "environmentName": {
+      "value": "dev"
+    },
+    "dependenciesResourceGroupName": {
+      "value": "rg-deployment-resources"
+    },
+    "dependenciesKeyVaultName": {
+      "value": "sorvaag-dependencies"
+    },
+    "applicationHostName": {
+      "value": "sorvaag.lol"
+    },
+    "sslCertificateName": {
+      "value": "sorvaag-lol-ssl"
+    },
+    "appServicePlanSku": {
+      "value": "P0v3"
+    },
+    "numberOfStamps": {
+      "value": 3
+    },
+    "numberOfAppServicePlansPerStamp": {
+      "value": 1
+    },
+    "minNumberOfInstancesPerAppServicePlan": {
+      "value": 3
+    }
+  }
+}
